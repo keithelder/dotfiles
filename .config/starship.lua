@@ -1,0 +1,4 @@
+-- function starship_transient_rprompt_func(prompt)
+-- 	return io.popen("starship module time"):read("*a")
+-- end
+-- load(io.popen("starship init cmd"):read("*a"))()
