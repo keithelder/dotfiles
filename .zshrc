@@ -81,7 +81,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting iterm2 tmux themes vscode web-search)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting iterm2 themes vscode web-search)
 
 
 ZSH_WEB_SEARCH_ENGINES=(
