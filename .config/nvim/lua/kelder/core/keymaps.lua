@@ -35,3 +35,25 @@ keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "Toggle LazyGit" }) -
 -- execute python
 -- keymap.set("n", "<leader>bp", ":w <bar> exec :vsplit term://python3 % <CR>", { desc = "Execute python file" })
 keymap.set("n", "<leader>bp", ":w <bar> :vsplit term://python3 % <CR>", { desc = "Execute python file" })
+
+-- execute c# file
+-- keymap.set("n", "<leader>bc", ":w <bar> exec :vsplit term://dotnet run % <CR>", { desc = "Execute c# file" })
+keymap.set("n", "<leader>bc", ":w <bar> :vsplit term://dotnet run % <CR>", { desc = "Execute c# file" })
+
+-- compiler commands for languages using compiler.nvim plugin
+keymap.set("n", "<leader>cc", ":CompilerRun<CR>", { desc = "Compile current file" })
+
+-- Open compiler
+keymap.set("n", "<F5>", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true })
+
+-- Redo last selected option
+keymap.set(
+  "n",
+  "<S-F5>",
+  "<cmd>CompilerStop<cr>" -- (Optional, to dispose all tasks before redo)
+    .. "<cmd>CompilerRedo<cr>",
+  { noremap = true, silent = true }
+)
+
+-- Toggle compiler results
+keymap.set("n", "<S-F7>", "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
