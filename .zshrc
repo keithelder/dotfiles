@@ -130,7 +130,7 @@ alias gaf="git add ."
 alias gc="git commit -m "
 alias gac="git add . && git commit -m "
 alias sb="cd ~/Library/CloudStorage/OneDrive-Knex/Documents/Obsidian\ Vault/"
-alias vzsh="v ~/.zshrc"
+alias vzsh="cd ~/dotfiles/ && v ~/.zshrc"
 alias python="python3"
 alias lg="lazygit"
 
