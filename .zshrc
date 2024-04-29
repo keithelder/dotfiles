@@ -143,4 +143,6 @@ alias lg="lazygit"
 export PATH="/Users/kelder/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 #
+
 eval "$(starship init zsh)"
+
